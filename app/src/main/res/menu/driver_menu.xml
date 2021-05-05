@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/driver_home_nav"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/driver_profile_nav"
+            android:title="Profile"
+            android:icon="@drawable/profile_black"
+            />
+        <item
+            android:icon="@drawable/notification"
+            android:id="@+id/driver_notification_nav"
+            android:title="Notification"
+            />
+
+
+    </group>
+
+
+
+        <item
+            android:title="Driver"
+            >
+
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/driver_customer_nav"
+                    android:icon="@drawable/profile_black"
+                    android:title="Customers"/>
+                <item
+                    android:id="@+id/driver_schedule_nav"
+                    android:title="schedule"
+                    android:icon="@drawable/schedule"
+                    />
+                <item
+                    android:icon="@drawable/location_black"
+                    android:id="@+id/driver_routes_nav"
+                    android:title="routes"
+                    />
+                </group>
+            </menu>
+        </item>
+
+
+        <item
+            android:title="Support">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/driver_help_nav"
+                    android:icon="@drawable/help"
+                    android:title="Help"/>
+                </group>
+
+            </menu>
+        </item>
+
+</menu>

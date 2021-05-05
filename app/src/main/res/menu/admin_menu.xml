@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/admin_home_nav"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/admin_profile_nav"
+            android:title="Profile"
+            android:icon="@drawable/profile_black"
+            />
+        <item
+
+            android:icon="@drawable/notification"
+            android:id="@+id/admin_notification_nav"
+            android:title="Notification"
+            />
+
+
+    </group>
+
+
+
+        <item
+            android:title="Administration"
+            >
+
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/admin_driver_nav"
+                    android:icon="@drawable/driver_black"
+                    android:title="Driver"/>
+                <item
+                    android:id="@+id/admin_buses_nav"
+                    android:title="Buses"
+                    android:icon="@drawable/bus_black"
+                    />
+                <item
+                    android:icon="@drawable/location_black"
+                    android:id="@+id/admin_customer_nav"
+                    android:title="Customers"
+                    />
+    </group>
+            </menu>
+        </item>
+
+
+        <item
+            android:title="Support">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/admin_help_nav"
+                    android:icon="@drawable/help"
+                    android:title="Help"/>
+
+    </group>
+            </menu>
+        </item>
+
+
+
+
+</menu>
