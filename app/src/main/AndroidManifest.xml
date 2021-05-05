@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bsrs">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RateDrivers"></activity>
+        <activity android:name=".CustomerDriverProfiles" />
+        <activity android:name=".CustomerDrivers" />
+        <activity android:name=".My_Driver" />
+        <activity android:name=".My_Bus" />
+        <activity android:name=".Customer_Bus_Profile" />
+        <activity android:name=".Ticket_Validation" />
+        <activity android:name=".Driver_Welcome_To_BSRS" />
+        <activity android:name=".Driver_Schedule" />
+        <activity android:name=".DriverRoutes" />
+        <activity android:name=".Login" />
+        <activity android:name=".Admin_CustomerProfiles" />
+        <activity android:name=".Available_Buses" />
+        <activity android:name=".BookingForm" />
+        <activity android:name=".BusProfile" />
+        <activity android:name=".BusRoutes" />
+        <activity android:name=".BusSeat" />
+        <activity android:name=".Change_password" />
+        <activity android:name=".ConfirmBooking" />
+        <activity android:name=".CustomerBus" />
+        <activity android:name=".CustomerDashboard" />
+        <activity android:name=".CustomerPlaces" />
+        <activity android:name=".CustomerProfile" />
+        <activity android:name=".DriverDashboard" />
+        <activity android:name=".EditCustomerProfile" />
+        <activity android:name=".From_To" />
+        <activity android:name=".QRScanner" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".ThankYou" />
+        <activity android:name=".CreateDriverAccounts" />
+        <activity android:name=".DriverProfile" />
+        <activity android:name=".EditDriverProfile" />
+        <activity android:name=".EditBusDetails" />
+        <activity android:name=".EditAdminProfile" />
+        <activity android:name=".AddTimetable" />
+        <activity android:name=".AddRoutes" />
+        <activity android:name=".Admin_DriverProfiles" />
+        <activity android:name=".AdminDisplayBusByRoutes" />
+        <activity android:name=".AddBuses" />
+        <activity android:name=".DisplayBusProfilesByRoutesActivity" />
+        <activity android:name=".Bus_DriverProfile" />
+        <activity android:name=".AdminCustomer" />
+        <activity android:name=".AdminProfile" />
+        <activity android:name=".Settings" />
+        <activity android:name=".AdminBus" />
+        <activity android:name=".AdminDriver" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
