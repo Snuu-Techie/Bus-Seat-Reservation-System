@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".Login"
+    android:scrollbars="none">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!-- android:background="@color/white"-->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app_real"
+        android:transitionName="logo_image" />
+
+    <TextView
+        android:id="@+id/serve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab"
+        android:text="READY TO SERVE YOU AGAIN!!"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:transitionName="abbr_bus" />
+
+    <TextView
+        android:id="@+id/mycontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfair_display"
+        android:text="Sign In to Continue "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:transitionName="abbr_busDesc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:outlineAmbientShadowColor="@color/myblue"
+            android:textColorHint="@color/myblue"
+            app:boxStrokeColor="@color/myOrange"
+            android:transitionName="user_trans">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/playfair_display"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:outlineAmbientShadowColor="@color/myblue"
+            android:textColorHint="@color/myblue"
+            app:boxStrokeColor="@color/myOrange"
+            app:passwordToggleEnabled="true"
+            android:transitionName="pass_trans"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/playfair_display"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/remember"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="10dp"
+                android:checked="false"
+                android:elevation="0dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="REMEMBER ME"
+                android:textSize="13sp"
+                android:transitionName="remm"
+
+
+                />
+
+            <TextView
+                android:id="@+id/forgot"
+                android:onClick="forgotPassword"
+                android:contextClickable="true"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/remember"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="FORGOT PASSWORD"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:transitionName="fort" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/playfair_display"
+            android:onClick="logUserIn"
+            android:text="LOGIN"
+            android:textColor="@color/myblue"
+            android:textSize="14sp"
+            android:transitionName="log" />
+
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/signUp"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:fontFamily="@font/playfair_display"
+            android:onClick="callSignUpListener"
+            android:text="NEW USER?SIGN UP"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:transitionName="sgnup" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <ProgressBar
+
+                android:id="@+id/progress"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

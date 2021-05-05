@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    tools:context=".BusProfile"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/myOrange"
+            android:navigationIcon="@drawable/back_button"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus"
+                android:fontFamily="@font/roboto_slab"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/myOrange">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bus_pro"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/bus_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab"
+                    android:text="Bus model"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/profileImage"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/bus_plate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab"
+                    android:textSize="20sp"
+                    android:text="Bus plate number"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/profileImage"
+                    android:layout_below="@+id/bus_model"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/drivers_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab"
+                    android:textSize="20sp"
+                    android:text="Driver'sfullname"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/bus_plate"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/profileImage"
+
+                    />
+                <TextView
+                    android:id="@+id/drivers_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab"
+                    android:textSize="20sp"
+                    android:text="License"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/drivers_name"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/profileImage"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <!-- android:onClick="bookingBuses"-->
+                <Button
+                    android:id="@+id/view_driver"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_button_blue"
+                    android:fontFamily="@font/playfair_display"
+                    android:textSize="14sp"
+                    android:text="Driver"
+                    android:textColor="@color/myOrange"
+                    android:transitionName="log"
+                    android:layout_below="@+id/drivers_license"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/profileImage"
+                    android:layout_marginLeft="15dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/edit_bus"
+                    android:clickable="true"
+                    android:onClick="callEditBusListener"
+                    />
+
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/add_route"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/myOrange"
+                android:text="Add Route"
+                android:fontFamily="@font/roboto_slab"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/myblue"
+                />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_below="@+id/add_route"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/myOrange"
+                android:text="Add Timetable"
+                android:id="@+id/add_time"
+                android:fontFamily="@font/roboto_slab"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/myblue"
+
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+

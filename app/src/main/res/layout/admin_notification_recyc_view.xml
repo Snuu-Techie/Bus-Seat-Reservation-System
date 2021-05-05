@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<androidx.cardview.widget.CardView
+
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+  android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:id="@+id/admin_notification_Card">
+
+    <RelativeLayout
+        android:id="@+id/notification_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/text_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Book Name ubv fubv ior hio rigih righrig hrighi rhgig hiephiig"
+            android:textSize="12dp"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/notication_sender"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Send Notification"
+        android:layout_alignParentBottom="true"
+        android:outlineAmbientShadowColor="@color/myblue"
+        android:textColorHint="@color/myblue"
+        app:boxStrokeColor="@color/myOrange"
+        android:transitionName="user_trans"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display"
+            android:inputType="textMultiLine"
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        app:cardCornerRadius="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/send"
+            android:layout_marginTop="5dp"
+
+
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>

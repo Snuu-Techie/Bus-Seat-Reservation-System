@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".Login">
+
+        <ImageView
+            android:id="@+id/loginLogin"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/app_real"
+            android:transitionName="logo_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="WElCOME TO BSRS "
+            android:textColor="@color/black"
+            android:textSize="29sp"
+            android:transitionName="abbr_bus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Sign Up to begin your journey"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:transitionName="abbr_busDesc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/regfullname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fullname"
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:textColorHint="@color/myblue"
+                android:transitionName="user_trans"
+                app:boxStrokeColor="@color/myOrange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/regusername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:textColorHint="@color/myblue"
+                android:transitionName="user_trans"
+                app:boxStrokeColor="@color/myOrange"
+                app:counterMaxLength="15">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/regemail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:textColorHint="@color/myblue"
+                android:transitionName="user_trans"
+                app:boxStrokeColor="@color/myOrange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/regphone_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:textColorHint="@color/myblue"
+                android:transitionName="user_pass"
+                app:boxStrokeColor="@color/myOrange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display"
+                    android:inputType="number"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/regaddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:textColorHint="@color/myblue"
+                android:transitionName="user_pass"
+                app:boxStrokeColor="@color/myOrange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/regpassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:textColorHint="@color/myblue"
+                android:transitionName="user_pass"
+                app:boxStrokeColor="@color/myOrange"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioGroup
+
+                    android:id="@+id/regGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <RadioButton
+                        android:id="@+id/rbtMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/playfair_display"
+
+                        android:text="male"
+                        android:textSize="13sp"
+                        android:transitionName="remm" />
+
+
+                    <RadioButton
+                        android:id="@+id/rbtFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/playfair_display"
+                        android:text="female"
+                        android:textSize="13sp"
+                        android:transitionName="fort" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/signupBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/playfair_display"
+                android:onClick="signUp"
+                android:text="Sign up"
+                android:textColor="@color/myblue"
+                android:textSize="14sp"
+                android:transitionName="log" />
+
+            <TextView
+                android:id="@+id/already"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/remember"
+                android:clickable="true"
+                android:onClick="callLogInListner"
+                android:elevation="0dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="AlREADY A USER?LOGIN"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:transitionName="sgnup" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/myOrange">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/profile_image" />
+
+        <TextView
+
+            android:id="@+id/fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display"
+            android:text="Oreeditse Mosesane"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display"
+            android:layout_below="@+id/fullname"
+            android:text="Oreeditse Mosesane"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/omang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:fontFamily="@font/playfair_display"
+            android:text="Oreeditse Mosesane"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/profile_image"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/omang"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:background="@drawable/rounded_button_blue"
+            android:text="Logout"
+            android:textColor="@color/myOrange"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
